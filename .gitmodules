@@ -1,0 +1,4 @@
+[submodule "packages/code/vscode"]
+	path = packages/code/vscode
+	url = https://github.com/lujunji4113/vscode.git
+	branch = lujunji/main
