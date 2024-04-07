@@ -1,0 +1,15 @@
+{
+  "extends": "./vscode/src/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "isolatedModules": true
+  },
+  "include": [
+    "./vscode/src/vs/base/browser/ui/grid/grid.ts",
+  ]
+}

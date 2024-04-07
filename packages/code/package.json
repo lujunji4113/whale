@@ -1,0 +1,52 @@
+{
+  "name": "@whale/code",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "./ui/grid": {
+      "types": "./dist/base/browser/ui/grid/grid.d.ts",
+      "default": "./dist/base/browser/ui/grid/grid.js"
+    },
+    "./ui/grid-view.css": {
+      "default": "./dist/base/browser/ui/grid/gridview.css"
+    },
+    "./ui/sash": {
+      "types": "./dist/base/browser/ui/sash/sash.d.ts",
+      "default": "./dist/base/browser/ui/sash/sash.js"
+    },
+    "./ui/sash.css": {
+      "default": "./dist/base/browser/ui/sash/sash.css"
+    },
+    "./ui/split-view": {
+      "types": "./dist/base/browser/ui/splitview/splitview.d.ts",
+      "default": "./dist/base/browser/ui/splitview/splitview.js"
+    },
+    "./ui/split-view.css": {
+      "default": "./dist/base/browser/ui/splitview/splitview.css"
+    },
+    "./ui/scrollbar/*": {
+      "types": "./dist/base/browser/ui/scrollbar/*.d.ts",
+      "default": "./dist/base/browser/ui/scrollbar/*.js"
+    },
+    "./ui/scrollbar.css": {
+      "default": "./dist/base/browser/ui/scrollbar/media/scrollbars.css"
+    },
+    "./common/event": {
+      "default": "./dist/base/common/event.js"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "rollup -c && tsc-alias -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/semver": "^7.5.8",
+    "@types/sinon": "^17.0.3",
+    "@types/trusted-types": "^2.0.7",
+    "@types/wicg-file-system-access": "^2023.10.5",
+    "@types/winreg": "^1.2.36"
+  }
+}
